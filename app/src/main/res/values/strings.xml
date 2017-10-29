@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Auto AC remote</string>
+    <string name="action_settings">Settings</string>
+    <string name="open_weather_maps_app_id">d6ea8586e75eef53eec0460a83abac6b</string>
+</resources>

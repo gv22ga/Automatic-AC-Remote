@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
             AlarmManager alarmManager=(AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
             Intent intent = new Intent(this, RemoteReceiver.class);
             PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
-            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), interval_in_min * 1000,
+            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), interval_in_min * 60 * 1000,
                     pendingIntent);
             Log.e(log_tag, "set repeating alarm");
             Log.e(log_tag, "interval= " + interval_in_min);
